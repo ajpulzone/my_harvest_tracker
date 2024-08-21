@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.7.4"
+ruby "3.2.4"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.2"
@@ -26,6 +26,8 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem 'psych', '~> 5.1', '>= 5.1.2'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -47,6 +49,11 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry'
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'launchy'
+  gem 'orderly'
 end
 
 group :development do
@@ -59,4 +66,23 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+
+gem "shoulda-matchers", "~> 5.2", :groups => [:development, :test]
+
+gem "capybara", "~> 3.37", :groups => [:development, :test]
+
+gem "pry-rails", "~> 0.3.9", :groups => [:development, :test]
+
+gem "faker", "~> 3.0", :groups => [:development, :test]
+
+gem "factory_bot_rails", :groups => [:development, :test]
+
+gem "bootstrap", "~> 5.2"
+
+gem 'simplecov', require: false, group: :test
+
+gem "httparty", "~> 0.20.0"
+
+gem "chartkick"
+gem "groupdate"
 
