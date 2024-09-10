@@ -77,7 +77,9 @@ gem "faker", "~> 3.0", :groups => [:development, :test]
 
 gem "factory_bot_rails", :groups => [:development, :test]
 
-gem "bootstrap", "~> 5.2"
+# 9-9-24: Inactivated gem due to creating errors with migrations: will trouble shoot later
+#Suspect dependency Issue
+## gem "bootstrap", "~> 5.2"
 
 gem 'simplecov', require: false, group: :test
 
