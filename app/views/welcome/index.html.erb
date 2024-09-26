@@ -1,0 +1,9 @@
+<h1>Harvest Tracker<h1>
+  
+  <%= form_with url: , method: :post, local: true do |form| %>
+  <%= form.number_field :discount_percent %>
+  <%= form.label "Percent Discount" %>
+  <%= form.number_field :quantity_threshold %>
+  <%= form.label "Quantity Threshold" %>
+  <%= form.submit "Submit"%>
+<% end%>

@@ -6,9 +6,7 @@ class UsersController > ApplicationController
       redirect_to users_path
     else 
       flash[:notice] = "User not created: Required information missing or incorreect"
-      redirect_to '/admin/merchants/new'
     end
-    
   end
   
   def show
