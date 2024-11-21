@@ -1,9 +1,15 @@
 <h1>Harvest Tracker<h1>
   
-  <%= form_with url: , method: :post, local: true do |form| %>
-  <%= form.number_field :discount_percent %>
-  <%= form.label "Percent Discount" %>
-  <%= form.number_field :quantity_threshold %>
-  <%= form.label "Quantity Threshold" %>
-  <%= form.submit "Submit"%>
-<% end%>
+<div class="row">
+  <div class="col">
+    <%= form_with(model: @user, url: admin_merchants_path , method: :post, local: true) do |f| %>
+    <div>
+      <%= f.label :name, 'Merchant Name' %>
+      <%= f.text_field :name %>
+    </div>
+    <div>
+      <%= f.submit 'Add Merchant' %>
+    </div>
+    <% end %>
+  </div>
+</div>

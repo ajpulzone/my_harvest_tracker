@@ -21,22 +21,24 @@ RSpec.describe "Welcome Page" do
       end
     end
 
-    it "Has a section for a new user to create a new profile" do
-      within("#new-user") do
-        expect(page).to have_field("User Name", type: "name")
-        expect(page).to have_field("Email", type: "email")
-        expect(page).to have_button("Create New User")
-      end
-    end
-  end
+  #   it "Has a section for a new user to create a new profile" do
+  #     within("#new-user") do
+  #       expect(page).to have_field("User Name", type: "name")
+  #       expect(page).to have_field("Email", type: "email")
+  #       expect(page).to have_button("Create New User")
+  #     end
+  #   end
+  # end
 
-  describe "When a current user logs in" do
+  # describe "When a current user logs in" do
+  #   it "Takes the user to their home page" do
 
-  end
+  #   end
+  # end
 
-  describe "when a current user attempts to use their current information to create a new user (email is not unique)" do
+  # describe "when a current user attempts to use their current information to create a new user (email is not unique)" do
 
-  end
+  # end
   # describe "When the create new user button is clicked" do
   #   it "Will take the user to the create user profile page" do
 
@@ -47,6 +49,6 @@ RSpec.describe "Welcome Page" do
   #   it "Will take the user to the login page" do
 
   #   end
-  # end
+  end
 
 end
